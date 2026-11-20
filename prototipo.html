@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altair Centro Educativo . Mi CV</title>
+</head>
+<body>
+    <!---MENU LATERAL--->
+    <aside>
+        <h2>altair</h2>
+        <p>Centro educativo</p>
+    
+    <nav>
+        <p>MI CAMPUS</p>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Horario</a></li>
+            <li><a href="#">Tutoria</a></li>
+            <li><a href="#">Faltas de asistencia</a></li>
+            <li><a href="#">Mis datos</a></li>
+            <li><a href="#" aria-current="page"><strong>MI CV</strong></a></li> 
+        </ul>
+    </nav>
+    </aside>
+
+    <hr>
+    <!--Contenido Principal-->
+    <main>
+
+    <h1>Mi currículum vitae</h1>
+    <p>Completa tus datos personales, añade tu experiencia y formación y genera tu CV profesional</p>
+    
+    <nav>
+      <ul>
+        <li><a href="#datos-personales">1. Datos personales</a></li>
+        <li><a href="#experiencia">2. Experiencia laboral</a></li>
+        <li><a href="#titulacion">3. Titulación</a></li>
+        <li><a href="#generar">4. Generar CV</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <!--1. DATOS PERSONALES-->
+    <section id="datos-personales">
+      <h2>Datos personales</h2>
+
+      <form>
+        <p>
+          <label for="nombre">Nombre *</label><br>
+          <input id="nombre" name="nombre" type="text" required>
+        </p>
+
+        <p>
+          <label for="apellidos">Apellidos *</label><br>
+          <input id="apellidos" name="apellidos" type="text" required>
+        </p>
+
+        <p>
+          <label for="telefono">Teléfono</label><br>
+          <input id="telefono" name="telefono" type="tel">
+        </p>
+
+        <p>
+          <label for="email">Email *</label><br>
+          <input id="email" name="email" type="email" required>
+        </p>
+
+        <p>
+          <label for="direccion">Dirección</label><br>
+          <input id="direccion" name="direccion" type="text">
+        </p>
+
+        <p>
+          <label for="nacimiento">Fecha de nacimiento</label><br>
+          <input id="nacimiento" name="nacimiento" type="date">
+        </p>
+
+        <p>
+          <label for="sobre-mi">Sobre mí</label><br>
+          <textarea id="sobre-mi" name="sobre-mi" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Guardar cambios</button>
+          <button type="reset">Cancelar</button>
+        </p>
+      </form>
+    </section>
+
+    <hr>
+
+    <!--2. EXPERIENCIA LABORAL-->
+    <section id="experiencia">
+      <h2>Experiencia laboral</h2>
+
+      <!--Ejemplo de un registro ya guardado-->
+      <article>
+        <h3>Profesora Particular</h3>
+        <p>Empresa de ejemplo . 2025-06-01 — Actualidad</p>
+        <p>Descripción de las tareas realizadas.</p>
+        <button type="button">Editar</button>
+        <button type="button">Eliminar</button>
+      </article>
+
+      <h3>Añadir experiencia laboral</h3>
+
+      <form>
+        <p>
+          <label for="empresa">Empresa *</label><br>
+          <input id="empresa" name="empresa" type="text" required>
+        </p>
+
+        <p>
+          <label for="puesto">Puesto *</label><br>
+          <input id="puesto" name="puesto" type="text" required>
+        </p>
+
+        <p>
+          <label for="fec-inicio">Fecha de inicio *</label><br>
+          <input id="fec-inicio" name="fec-inicio" type="date" required>
+        </p>
+
+        <p>
+          <label for="fec-fin">Fecha de fin</label><br>
+          <input id="fec-fin" name="fec-fin" type="date">
+        </p>
+
+        <p>
+          <input id="fec-actual" name="fec-actual" type="checkbox">
+          <label for="fec-actual">Actualmente trabajo aquí</label>
+        </p>
+
+        <p>
+          <label for="exp-descripcion">Descripción</label><br>
+          <textarea id="exp-descripcion" name="exp-descripcion" rows="3" cols="40"></textarea>
+        </p>
+
+        <p>
+          <label for="exp-archivo">Añadir documentos (PDF/PNG, máx. 5 MB)</label><br>
+          <input id="exp-archivo" name="exp-archivo" type="file" accept=".pdf,.png">
+        </p>
+
+        <p>
+          <button type="submit">Guardar experiencia</button>
+          <button type="reset">Cancelar</button>
+        </p>
+      </form>
+    </section>
+
+    <hr>
+
+    <!--3. TITULACIÓN-->
+    <section id="titulacion">
+      <h2>Titulación</h2>
+
+      <article>
+        <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
+        <p>Altair Centro Educativo · 2025-09-15 — Actualidad</p>
+        <p>Más información sobre la titulación.</p>
+        <button type="button">Editar</button>
+        <button type="button">Eliminar</button>
+      </article>
+
+      <h3>Añadir titulación</h3>
+
+      <form>
+        <p>
+          <label for="centro">Centro *</label><br>
+          <input id="centro" name="centro" type="text" required>
+        </p>
+
+        <p>
+          <label for="titulo">Título *</label><br>
+          <input id="titulo" name="titulo" type="text" required>
+        </p>
+
+        <p>
+          <label for="tit-inicio">Fecha de inicio *</label><br>
+          <input id="tit-inicio" name="tit-inicio" type="date" required>
+        </p>
+
+        <p>
+          <label for="tit-fin">Fecha de fin</label><br>
+          <input id="tit-fin" name="tit-fin" type="date">
+        </p>
+
+        <p>
+          <label for="tit-descripcion">Más información</label><br>
+          <textarea id="tit-descripcion" name="tit-descripcion" rows="3" cols="40"></textarea>
+        </p>
+
+        <p>
+          <label for="tit-archivo">Añadir documentos (PDF/PNG, máx. 5 MB)</label><br>
+          <input id="tit-archivo" name="tit-archivo" type="file" accept=".pdf,.png">
+        </p>
+
+        <p>
+          <button type="submit">Guardar titulación</button>
+          <button type="reset">Cancelar</button>
+        </p>
+      </form>
+
+      <!--Información adicional-->
+      <fieldset>
+        <legend>Información adicional</legend>
+
+        <p>¿Dispones de carnet de conducir?</p>
+        <p>
+          <input id="carnet-si" name="carnet" type="radio" value="Sí">
+          <label for="carnet-si">Sí</label>
+          <input id="carnet-no" name="carnet" type="radio" value="No">
+          <label for="carnet-no">No</label>
+        </p>
+
+        <p>¿Dispones de vehículo propio?</p>
+        <p>
+          <input id="vehiculo-si" name="vehiculo" type="radio" value="Sí">
+          <label for="vehiculo-si">Sí</label>
+          <input id="vehiculo-no" name="vehiculo" type="radio" value="No">
+          <label for="vehiculo-no">No</label>
+        </p>
+      </fieldset>
+    </section>
+
+    <hr>
+
+    <!--4. GENERAR CV-->
+    <section id="generar">
+      <h2>Generar CV</h2>
+      <p>La vista previa contiene únicamente la información que has guardado. Los documentos adjuntos no se incluyen.</p>
+
+      <button type="button">Abrir vista previa</button>
+
+      <article>
+        <header>
+          <h1>Triana Moreno Santacruz</h1>
+          <p>triana.moreno@altair.es · 600 123 456 · Dirección de ejemplo</p>
+          <p>Fecha de nacimiento: 2007-03-23</p>
+        </header>
+
+        <section>
+          <h2>Sobre mí</h2>
+          <p>Texto de presentación personal.</p>
+        </section>
+
+        <section>
+          <h2>Experiencia laboral</h2>
+          <article>
+            <h3>Profesora Particular</h3>
+            <p>Empresa de ejemplo </p>
+            <p>2025-06-01 — Actualidad</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Formación</h2>
+          <article>
+            <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
+            <p>Altair Centro Educativo</p>
+            <p>2025-09-15 — Actualidad</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Información adicional</h2>
+          <p>Carnet de conducir: Sí</p>
+          <p>Vehículo propio: No</p>
+        </section>
+      </article>
+
+      <p>
+        <button type="button">Editar CV</button>
+        <button type="button">Descargar PDF</button>
+        <button type="button">Enviar</button>
+        <button type="button">Cancelar</button>
+      </p>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>Altair Centro Educativo · Curso 2026-2027</p>
+  </footer>
+    
+</body>
+</html>
